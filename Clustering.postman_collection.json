@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "acffe870-1bd4-4d41-b4b3-33fcb6ce96b6",
+		"name": "Clustering",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Learn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"AmountOfClusters\":2, \"Observations\": [[1.1,2.2,3.3],[2.2,3.7,4.8]]}"
+				},
+				"url": {
+					"raw": "http://localhost:2844/api/clustering/Learn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2844",
+					"path": [
+						"api",
+						"clustering",
+						"Learn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decide",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Observations\": [[1.1,2.2,3.3],[2.2,3.7,4.8]]}"
+				},
+				"url": {
+					"raw": "http://localhost:2844/api/clustering/Decide",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2844",
+					"path": [
+						"api",
+						"clustering",
+						"Decide"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
